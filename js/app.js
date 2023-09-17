@@ -18,7 +18,7 @@ let textColor;
 
 possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('click', (e) => {
   userChoice = e.target.id;
-  userChoiceDisplay.setAttribute('src', `../img/${userChoice}.svg`);
+  userChoiceDisplay.setAttribute('src', `./img/${userChoice}.svg`);
   userChoiceDisplay.setAttribute('alt', userChoice);
   generateComputerChoice();
   getResult();
@@ -39,7 +39,7 @@ function generateComputerChoice() {
     computerChoice = 'scissors';
   }
   
-  computerChoiceDisplay.setAttribute('src', `../img/${computerChoice}.svg`);
+  computerChoiceDisplay.setAttribute('src', `./img/${computerChoice}.svg`);
   computerChoiceDisplay.setAttribute('alt', computerChoice);
 }
 
