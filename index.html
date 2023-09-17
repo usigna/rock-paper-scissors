@@ -3,47 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Rock, Paper, Scissors</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+  <title>Rock, Paper, Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" /> 
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 <body>
 
   <header class="header">
-    <div class="wrapper">
-      <h1 class="title">Game Rock, Paper, Scissors</h1>
-    </div>
+    <h1 class="title">Rock, Paper, Scissors</h1>
   </header>
 
-  <main>
-    <div class="wrapper">
-      <div class="result" id="result">You win!</div>
-
-      <div class="container">
-        <div class="container__item">
-          <div class="choice" id="computer-choice"></div>
-          Computer choice
-        </div>
-        <div class="container__item">
-          <div class="choice" id="user-choice"></div>
-          Your choice
-        </div>
-      </div>
-
-      <div class="buttons">
-        <button class="btn" id="rock">rock</button>
-        <button class="btn" id="paper">paper</button>
-        <button class="btn" id="scissors">scissors</button>
-      </div>
+  <main class="main">
+    <div class="result">Result: <span id="score"></span></div>
+    <div class="container">
+      <div class="container__item">Computer choice:<div class="choice"><img src="" alt="" id="computer-choice" /></div></div>
+      <div class="container__item">Your choice:<div class="choice"><img src="" alt="" id="user-choice" /></div></div>
+    </div>
+    <div class="buttons">
+      <button class="btn" id="rock"><img src="img/rock.svg" alt="" />Rock</button>
+      <button class="btn" id="paper"><img src="img/paper.svg" alt="" />Paper</button>
+      <button class="btn" id="scissors"><img src="img/scissors.svg" alt="" />Scissors</button>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="wrapper">
-      &copy; 2023 Usigna
-    </div>
+    &copy; 2023 Usigna
   </footer>
-  
+
   <script src="js/app.js"></script>
 </body>
 </html>

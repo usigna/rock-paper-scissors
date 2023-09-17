@@ -21,47 +21,57 @@ html {
 
 body {
   height: 100%;
-  background-color: #0F0F0F;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-.wrapper {
-  text-align: center;
-  color: #F0F0F0;
+  color: #f0f0f0;
+  background-color: #0f0f0f;
   font-size: 1.8rem;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 
 .header,
 .footer {
   padding: 48px 0;
+  text-align: center;
 }
 
 .footer {
   font-size: 1.4rem;
 }
 
+.title {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
 .result {
+  font-size: 2.4rem;
   font-weight: 700;
-  font-size: 3.5rem;
   text-transform: uppercase;
-  color: #F7E987;
 }
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-  margin: 48px 0;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+    gap: 48px;
+  }
 }
 
 .container__item {
-  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,34 +82,40 @@ body {
 .choice {
   width: 150px;
   height: 150px;
-  padding: 24px;
+  background-color: #f0f0f0;
   border-radius: 15px;
-  background: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
-    height: 100%;
+    height: 80px;
   }
 }
 
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+  }
 }
 
 .btn {
-  background-color: #F0F0F0;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 50px;
-  font-size: 1.8rem;
+  width: 150px;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   cursor: pointer;
-  transition: background 0.2s;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 15px;
 
-  &:hover,
-  &:focus {
-    background-color: #F7E987;
+  img {
+    height: 24px;
   }
 }
